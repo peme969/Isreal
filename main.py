@@ -13,7 +13,7 @@ from configparser import ConfigParser
 from getpass import getpass
 from datetime import datetime
 
-# Define ANSI escape code, i don't want to use colorama since i cannot figure how to make it works on cross-platform
+# Define ANSI escape code, i don't want to use colorama since i cannot figure how to make it work on cross-platform
 class colors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
