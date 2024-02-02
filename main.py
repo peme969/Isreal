@@ -1,5 +1,5 @@
 # --------------------------- #
-# Made by GorouFlex           #
+# Made by Peme969 ⚡          #
 # Ported from rfoal/duolingo  #
 # Version 1.7                 #
 # --------------------------- #
@@ -35,7 +35,7 @@ config.read(config_path)
 
 # Print information window
 print(f"{colors.WARNING}------- Welcome to DuoXPy -------{colors.ENDC}")
-print(f"{colors.OKBLUE}Made by GFx{colors.ENDC}")
+print(f"{colors.OKBLUE}Made by Peme969 ⚡{colors.ENDC}")
 # If this script were on GitHub Actions
 if os.getenv('GITHUB_ACTIONS') == 'true':
     print(f"{colors.OKBLUE}Powered by GitHub Actions V3 and Python{colors.ENDC}")
