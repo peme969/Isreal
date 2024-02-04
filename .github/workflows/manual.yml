@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       lessons:
-        default: 1
-        description: 'Number of lessons'
-        required: false
+        default: 50
+        description: 'Number of lessons to farm XP 😜 (1 lesson = 20 xp)'
+        required: true
         type: number
    
 jobs:
