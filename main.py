@@ -60,7 +60,6 @@ def create_config() -> None:
     config.set('User', 'TOKEN', "")
     if os.getenv('GITHUB_ACTIONS') == 'true':
         token = os.getenv('JWT_TOKEN')
-        print(token)
         config.set('User', 'TOKEN', f"{token}")
         lessons = os.getenv('LESSONS')
         config.set('User', 'LESSONS', f"{lessons}")
