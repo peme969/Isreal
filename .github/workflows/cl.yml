@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4    
-      - name: Run DuoXPy
+      - name: Run Isreal
         run: python main.py
         env:
           JWT_TOKEN: ${{ secrets.JWT_TOKEN }}
