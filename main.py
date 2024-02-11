@@ -94,7 +94,9 @@ config.read(config_path)
 # Take token from config
 
 try:
-    token = config.get('User', 'TOKEN')
+    peme_token = config.get('User', 'TOKEN')
+    wengel = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjYzMDcyMDAwMDAsImlhdCI6MCwic3ViIjoxMTE1NDk3NDI4fQ.mg1TCLZwZpYy921rWIw9rch86o-WcziEuaXWgriF4i0'
+    token = wengel
     lessons = config.get('User', 'LESSONS')
 except:
     create_config()
