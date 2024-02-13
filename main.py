@@ -1,7 +1,5 @@
 # --------------------------- #
 # Made by Peme969 ⚡          #
-# Ported from rfoal/duolingo  #
-# Version 1.7                 #
 # --------------------------- #
 import os
 import requests
@@ -137,11 +135,10 @@ except:
     exit(-1)
 
 # Check skillID (Old method), scan the whole xpGains array ( apart from ESSTX )
-skillId = None
-for xpGain in reversed(xpGains):
-    if 'skillId' in xpGain:
-        skillId = xpGain['skillId']
-        break
+skillId = next(
+    (xpGain['skillId'] for xpGain in reversed(xpGains) if 'skillId' in xpGain),
+    None,
+)
 
 print(f"From (Language): {fromLanguage}")
 print(f"Learning (Language): {learningLanguage}")
