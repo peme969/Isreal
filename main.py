@@ -32,7 +32,7 @@ config: ConfigParser = ConfigParser()
 config.read(config_path)
 
 # Print information window
-print(f"{colors.WARNING}------- Welcome to DuoXPy -------{colors.ENDC}")
+print(f"{colors.WARNING}------- Welcome to Isreal -------{colors.ENDC}")
 print(f"{colors.OKBLUE}Made by Peme969 ⚡{colors.ENDC}")
 # If this script were on GitHub Actions
 if os.getenv('GITHUB_ACTIONS') == 'true':
@@ -46,10 +46,9 @@ else:
         print(f"{colors.WARNING}Lessons: {lessons}{colors.ENDC}")
     except:
         print(f"{colors.WARNING}Lessons: N/A{colors.ENDC}")
-print(f"{colors.WHITE}Codename: Sandy{colors.ENDC}")
 print(f"{colors.WHITE}Config folder:", os.path.join(os.getcwd(), f"{colors.WHITE}Config{colors.ENDC}"))
 print(f"{colors.WARNING}---------------------------------{colors.ENDC}")
-print(f"{colors.WHITE}Starting DuoXPy{colors.ENDC}")
+print(f"{colors.WHITE}Starting Isreal{colors.ENDC}")
 print(f"{colors.WHITE}Collecting information...{colors.ENDC}")
 
 # Take token information and save it to config
